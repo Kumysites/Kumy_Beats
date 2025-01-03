@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumy Beats - Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <style>
+        /* Masquer le bouton de téléchargement */
+        audio::-internal-media-controls-download-button {
+            display: none;
+        }
+        audio::-webkit-media-controls-enclosure {
+            overflow: hidden;
+        }
+        audio::-webkit-media-controls-panel {
+            width: calc(100% + 30px); /* Ajustez cette valeur si nécessaire */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kumy Beats - Shop</h1>
+        <a href="https://wa.me/50931468115" target="_blank">Chattez avec Kumy Beats sur WhatsApp</a>
+    </header>
+    <main>
+        <div class="beat">
+            <h2>Duality</h2>
+            <p>Drill beat</p>
+            <audio controls>
+                <source src="audio/Duality.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <button onclick="effectuerPaiement(100, 'beat1')">Acheter Beat 1 pour $100</button>
+        </div>
+        <div class="beat">
+            <h2>Trumpoo</h2>
+            <p>Trap beat</p>
+            <audio controls>
+                <source src="audio/Trumpoo.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas l'élément audio.
+            </audio>
+            <button onclick="effectuerPaiement(150, 'beat2')">Acheter Beat 2 pour $150</button>
+        </div>
+        <!-- Ajoutez plus de beats ici -->
+    </main>
+</body>
+</html>
